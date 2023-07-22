@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500&display=swap");
+
+:root {
+  --light-blue: #98edf5;
+}
+
+div.content {
+  position: absolute;
+  transform: translateY(50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+section.parties {
+  position: relative;
+}
+
+section.parties div.parties-title,
+section.english-lessons div.lessons-title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  font-family: "Shantell Sans", cursive;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+}
+
+section.parties,
+section.english-lessons {
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+section img,
+section.parties img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section.parties:hover,
+section.english-lessons:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(1.1);
+  cursor: pointer;
+}

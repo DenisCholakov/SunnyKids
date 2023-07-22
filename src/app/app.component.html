@@ -1,0 +1,28 @@
+<div class="content">
+  <section class="parties" id="parties-content">
+    <img
+      src="../assets/parties.jpg"
+      alt="english lessons"
+      class="navigation-icon"
+      (mouseenter)="showText(partiesTitle)"
+      (mouseleave)="hideText(partiesTitle)"
+      (click)="navigateToParties()"
+    />
+
+    <div #partiesTitle class="parties-title">Детски партита</div>
+  </section>
+
+  <section
+    class="english-lessons"
+    id="english-lessons"
+    (mouseenter)="showText(lessonsTitle)"
+    (mouseleave)="hideText(lessonsTitle)"
+  >
+    <img
+      src="../assets/OIP.jpg"
+      alt="english lessons"
+      class="navigation-icon"
+    />
+    <div #lessonsTitle class="lessons-title">Учебен център</div>
+  </section>
+</div>
